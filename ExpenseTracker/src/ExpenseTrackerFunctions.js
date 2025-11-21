@@ -1,7 +1,6 @@
-
+const expenses = [];
 
 function addExpense(product,price) {
-    const expenses = [];
     expense = {
         purpose:product,
         amount:price,
@@ -11,7 +10,7 @@ function addExpense(product,price) {
     expenses.push(expense)
     console.log(expenses)
 
-    return expenses
+    return "Expenses added"
 }
 const users = {};
 function addUniqueUsernameAndPassword(userName, password) {
@@ -21,7 +20,7 @@ function addUniqueUsernameAndPassword(userName, password) {
     users[userName] = {
         password: password,
         income: 0,
-        expenses: []
+        expenses: expenses
     };
     console.log(users);
     return "User added successfully";
