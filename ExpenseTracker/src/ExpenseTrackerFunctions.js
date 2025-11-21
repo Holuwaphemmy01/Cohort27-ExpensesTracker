@@ -13,4 +13,19 @@ function addExpense(product,price) {
     return "Expenses added"
 }
 
-module.exports = addExpense;
+
+function showAllExpense(){
+    if(expenses.length !== 0){
+        console.log(expenses);
+        return "No expense added"
+        
+    }
+
+    expenses.forEach((expense, index) => {
+        return `${index + 1}. ${expense.purpose} - $${expense.amount}`;
+    });
+
+
+}
+
+module.exports = {addExpense, showAllExpense};
