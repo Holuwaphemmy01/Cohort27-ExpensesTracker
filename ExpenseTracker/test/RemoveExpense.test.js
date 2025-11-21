@@ -2,8 +2,8 @@ const RemoveExpense = require("../src/RemoveExpense")
 describe("Test RemoveExpense function",()=>{
 
     test("test that RemoveExpense is empty",()=>{
-        expenses =[]
-        expect(RemoveExpense("beans",expenses)).toBe("EXPENSES IS EMPTY!")
+
+        expect(RemoveExpense("beans")).toBe("EXPENSES IS EMPTY!")
     })
 
     test("test that RemoveExpenses returns expense susccesfully removed",()=>{
@@ -24,7 +24,7 @@ describe("Test RemoveExpense function",()=>{
         },
         ]
         
-        expect(RemoveExpense("beans",expenses)).toBe("EXPENSE SUCCESSFULLY REMOVED!")   
+        expect(RemoveExpense("beans")).toBe("EXPENSE SUCCESSFULLY REMOVED!")   
 
     })
 
@@ -47,7 +47,7 @@ describe("Test RemoveExpense function",()=>{
         },
         ]
         
-        expect(RemoveExpense("tomatoes",expenses)).toBe("INVALID INPUT!")   
+        expect(RemoveExpense("tomatoes")).toBe("INVALID INPUT!")   
     })
 
 })
