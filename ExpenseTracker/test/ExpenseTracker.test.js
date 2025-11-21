@@ -1,4 +1,4 @@
-const addExpense = require("../ExpenseTrackerFunctions");
+const addExpense = require("../src/ExpenseTrackerFunctions");
 
 
 test ("add an expense", ()=>{
