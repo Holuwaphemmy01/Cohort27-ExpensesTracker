@@ -1,7 +1,6 @@
+const addExpense = require("../ExpenseTrackerFunctions");
+
+
 test ("add an expense", ()=>{
-    expect(1 + 1).toBe(2);
-}
-
-
-
-)
+    expect(addExpense ("buy gala","500","2025-11-21  06:00")).toBe("Expenses added");
+})
