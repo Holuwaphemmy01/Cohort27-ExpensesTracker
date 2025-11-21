@@ -2,7 +2,7 @@ const RemoveExpense = require("../src/RemoveExpense")
 describe("Test RemoveExpense function",()=>{
 
     test("test that RemoveExpense is empty",()=>{
-
+        expenses=[]
         expect(RemoveExpense("beans")).toBe("EXPENSES IS EMPTY!")
     })
 

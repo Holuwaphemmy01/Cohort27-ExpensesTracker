@@ -1,4 +1,3 @@
-expenses = []
 function RemoveExpense(product){
     if(expenses.length == 0){
         return "EXPENSES IS EMPTY!"
